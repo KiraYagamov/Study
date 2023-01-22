@@ -77,7 +77,7 @@ namespace App
             Console.Write("Введите радиус: ");
             r = float.Parse(Console.ReadLine());
             Console.WriteLine("Длина окружности равна: " + (2 * Math.PI * r));
-            Console.WriteLine("Площадь круга равна: " + (Math.Pow(Math.PI*r, 2)));
+            Console.WriteLine("Площадь круга равна: " + Math.PI*(Math.Pow(r, 2)));
             Console.WriteLine();
             ChangeProgram();
         }
