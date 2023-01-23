@@ -23,6 +23,7 @@ namespace App
             Console.WriteLine("4. Среднее арифметическое и геометрическое");
             Console.WriteLine("5. Закрыть программу");
             numOfProgram = int.Parse(Console.ReadLine());
+            Console.WriteLine();
             if (numOfProgram == 1)
             {
                 Program1();
@@ -54,8 +55,10 @@ namespace App
         {
             Console.Write("Введите первую сторону: ");
             a = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.Write("Введите вторую сторону: ");
             b = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Периметр прямоугольника равен: " + 2*(a+b));
             Console.WriteLine();
             ChangeProgram();
@@ -64,10 +67,13 @@ namespace App
         {
             Console.Write("Введите первое основание: ");
             a = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.Write("Введите второе основание: ");
             b = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.Write("Введите высоту: ");
             h = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Площадь трапеции равна: " + (0.5f * (a + b) * h));
             Console.WriteLine();
             ChangeProgram();
@@ -76,6 +82,7 @@ namespace App
         {
             Console.Write("Введите радиус: ");
             r = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Длина окружности равна: " + (2 * Math.PI * r));
             Console.WriteLine("Площадь круга равна: " + Math.PI*(Math.Pow(r, 2)));
             Console.WriteLine();
@@ -85,8 +92,10 @@ namespace App
         {
             Console.Write("Введите первое число: ");
             a = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.Write("Введите второе число: ");
             b = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Среднее арифметическое кубов этих чисел: " + ((Math.Pow(a, 3) + Math.Pow(b, 3))/2));
             if (a < 0)
             {
