@@ -94,7 +94,7 @@ namespace App
             }
             if (b < 0)
             {
-                b = -1;
+                b = -b;
             }
             Console.WriteLine("Среднее геометрическое модулей этих чисел: " + (Math.Pow(a * b, 0.5f)));
             Console.WriteLine();
