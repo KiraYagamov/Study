@@ -56,7 +56,7 @@ namespace App
             a = float.Parse(Console.ReadLine());
             Console.Write("Введите вторую сторону: ");
             b = float.Parse(Console.ReadLine());
-            Console.WriteLine("Периметр прямоугольника равен: " + 2*(a+b);
+            Console.WriteLine("Периметр прямоугольника равен: " + 2*(a+b));
             Console.WriteLine();
             ChangeProgram();
         }
