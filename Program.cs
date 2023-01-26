@@ -121,10 +121,13 @@ namespace Study
         public void Program5(){
             Console.WriteLine("Сколько рублей стоит пироженое?");
             a = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Сколько копеек стоит пироженое?");
             b = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             Console.WriteLine("Сколько пироженных вы хотите купить?");
             n = float.Parse(Console.ReadLine());
+            Console.WriteLine();
             a = a*n;
             b = b*n;
             while(b >= 100){
@@ -138,9 +141,13 @@ namespace Study
         public void Program6(){
             int hour1, min1, sec1; int hour2, min2, sec2;
             Console.WriteLine("Введите значение первого момента времени в одну строку через :");
+            Console.WriteLine();
             string time1 = Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("Введите значение второго момента времени в одну строку через :");
+            Console.WriteLine();
             string time2 = Console.ReadLine();
+            Console.WriteLine();
             string[] words1 = time1.Split(':');
             string[] words2 = time2.Split(':');
             hour1 = int.Parse(words1[0]); hour2 = int.Parse(words2[0]);
@@ -158,15 +165,17 @@ namespace Study
         }
         public void Program7(){
             int x1, y1, x2, y2;
-            Console.WriteLine("Введите значение координат конца первого вектора в одну строку через :");
+            Console.WriteLine("Введите значение координат конца первого вектора в одну строку через :"  + "\n");
             string vector1 = Console.ReadLine();
-            Console.WriteLine("Введите значение координат конца второго вектора в одну строку через :");
+            Console.WriteLine();
+            Console.WriteLine("Введите значение координат конца второго вектора в одну строку через :"  + "\n");
             string vector2 = Console.ReadLine();
+            Console.WriteLine();
             string[] coord1 = vector1.Split(":");
             string[] coord2 = vector2.Split(":");
             x1 = int.Parse(coord1[0]); y1 = int.Parse(coord1[1]);
             x2 = int.Parse(coord2[0]); y2 = int.Parse(coord2[1]);
-            Console.WriteLine("Длина первого вектора равна " + (Math.Pow(Math.Pow(x1, 2) + Math.Pow(y1, 2), 0.5f)));
+            Console.WriteLine("Длина первого вектора равна " + (Math.Pow(Math.Pow(x1, 2) + Math.Pow(y1, 2), 0.5f)) + "\n");
             Console.WriteLine("Длина второго вектора равна " + (Math.Pow(Math.Pow(x2, 2) + Math.Pow(y2, 2), 0.5f)) + "\n");
             ChangeProgram();
         }
