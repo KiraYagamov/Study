@@ -1,0 +1,15 @@
+G:\CuberAdventure\Study\bin\Debug\net7.0\Study.exe
+G:\CuberAdventure\Study\bin\Debug\net7.0\Study.deps.json
+G:\CuberAdventure\Study\bin\Debug\net7.0\Study.runtimeconfig.json
+G:\CuberAdventure\Study\bin\Debug\net7.0\Study.dll
+G:\CuberAdventure\Study\bin\Debug\net7.0\Study.pdb
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.csproj.AssemblyReference.cache
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.GeneratedMSBuildEditorConfig.editorconfig
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.AssemblyInfoInputs.cache
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.AssemblyInfo.cs
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.csproj.CoreCompileInputs.cache
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.dll
+G:\CuberAdventure\Study\obj\Debug\net7.0\refint\Study.dll
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.pdb
+G:\CuberAdventure\Study\obj\Debug\net7.0\Study.genruntimeconfig.cache
+G:\CuberAdventure\Study\obj\Debug\net7.0\ref\Study.dll
