@@ -137,9 +137,9 @@ namespace Study
         }
         public void Program6(){
             int hour1, min1, sec1; int hour2, min2, sec2;
-            Console.WriteLine("Введите значение первого момента времени через :");
+            Console.WriteLine("Введите значение первого момента времени в одну строку через :");
             string time1 = Console.ReadLine();
-            Console.WriteLine("Введите значение второго момента времени через :");
+            Console.WriteLine("Введите значение второго момента времени в одну строку через :");
             string time2 = Console.ReadLine();
             string[] words1 = time1.Split(':');
             string[] words2 = time2.Split(':');
@@ -158,9 +158,9 @@ namespace Study
         }
         public void Program7(){
             int x1, y1, x2, y2;
-            Console.WriteLine("Введите значение координат конца первого вектора через :");
+            Console.WriteLine("Введите значение координат конца первого вектора в одну строку через :");
             string vector1 = Console.ReadLine();
-            Console.WriteLine("Введите значение координат конца второго вектора через :");
+            Console.WriteLine("Введите значение координат конца второго вектора в одну строку через :");
             string vector2 = Console.ReadLine();
             string[] coord1 = vector1.Split(":");
             string[] coord2 = vector2.Split(":");
