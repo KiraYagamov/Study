@@ -17,6 +17,7 @@ namespace Study
         public void ChangeProgram()
         {
             Console.WriteLine("Выберите программу из списка: ");
+            Console.WriteLine("0. Закрыть программу");
             Console.WriteLine("1. Периметр прямоугольника");
             Console.WriteLine("2. Площадь трапеции");
             Console.WriteLine("3. Длина окружности и площадь круга");
@@ -24,10 +25,13 @@ namespace Study
             Console.WriteLine("5. Про цену пироженного");
             Console.WriteLine("6. Разница времени в секундах");
             Console.WriteLine("7. Длины векторов");
-            Console.WriteLine("8. Закрыть программу");
+            Console.WriteLine("8. Квадратное уравнение");
             numOfProgram = int.Parse(Console.ReadLine());
             Console.WriteLine();
             switch(numOfProgram){
+                case 0:
+                    Environment.Exit(0);
+                    break;
                 case 1:
                     Program1();
                     break;
@@ -50,7 +54,7 @@ namespace Study
                     Program7();
                     break;
                 case 8:
-                    Environment.Exit(0);
+                    Program8();
                     break;
                 default:
                     Console.WriteLine("Неверно заданное число!");
@@ -177,6 +181,52 @@ namespace Study
             x2 = int.Parse(coord2[0]); y2 = int.Parse(coord2[1]);
             Console.WriteLine("Длина первого вектора равна " + (Math.Pow(Math.Pow(x1, 2) + Math.Pow(y1, 2), 0.5f)) + "\n");
             Console.WriteLine("Длина второго вектора равна " + (Math.Pow(Math.Pow(x2, 2) + Math.Pow(y2, 2), 0.5f)) + "\n");
+            ChangeProgram();
+        }
+        public void Program8()
+        {
+            double a, b, c, d, x1, x2;
+            Console.WriteLine("Введите значения a, b и с через пробел: ");
+            string text = Console.ReadLine();
+            string[] phrases = text.Split(" ");
+            a = double.Parse(phrases[0]);
+            b = double.Parse(phrases[1]);
+            c = double.Parse(phrases[2]);
+            Console.WriteLine("Уравнение: " + a + "x^2 + " + b + "x + " + c + " = 0");
+
+            d = Math.Pow(b, 2) - 4 * a * c;
+            if(a != 0 && b != 0){
+                if(d > 0){
+                    x1 = (-b - Math.Pow(d, 0.5))/(2*a);
+                    x2 = (-b + Math.Pow(d, 0.5))/(2*a);
+                    Console.WriteLine("Корни: " + x1 + ", " + x2);
+                }
+                else if(d == 0){
+                    x1 = -b/(2*a);
+                    Console.WriteLine("Корень: " + x1);
+                }
+                else if(d < 0){
+                    Console.WriteLine("Корней нет!");
+                }
+            }
+            else if(a == 0 && b != 0){
+                x1 = (-c/b);
+                Console.WriteLine("Корень: " + x1);
+            }
+            else if(a != 0 && b == 0){
+                if(c > 0){
+                    Console.WriteLine("Корней нет");
+                }
+                else if(c < 0){
+                    x1 = Math.Pow(-c, 0.5);
+                    x2 = -Math.Pow(-c, 0.5);
+                    Console.WriteLine("Корни: " + x1 + ", " + x2);
+                }
+            }
+            else if(a == 0 && b == 0){
+                Console.WriteLine("Уравнение не имеет смысла");
+            }
+            Console.WriteLine();
             ChangeProgram();
         }
     }
