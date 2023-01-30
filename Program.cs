@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Study
 {
@@ -215,12 +215,22 @@ namespace Study
             }
             else if(a != 0 && b == 0){
                 if(c > 0){
-                    Console.WriteLine("Корней нет");
+                	if(a < 0){
+                		x1 = Math.Pow(-(c/a), 0.5);
+                		Console.WriteLine("Корни: ±" + x1);
+                	}
+                	else{
+                		 Console.WriteLine("Корней нет");
+                	}
                 }
                 else if(c < 0){
-                    x1 = Math.Pow(-c, 0.5);
-                    x2 = -Math.Pow(-c, 0.5);
-                    Console.WriteLine("Корни: " + x1 + ", " + x2);
+                    if (a > 0){
+                		x1 = Math.Pow(-(c/a), 0.5);
+                		Console.WriteLine("Корни: ±" + x1);
+                	}
+                	else{
+                		 Console.WriteLine("Корней нет");
+                	}
                 }
             }
             else if(a == 0 && b == 0){
