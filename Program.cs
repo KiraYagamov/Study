@@ -26,6 +26,9 @@ namespace Study
             Console.WriteLine("6. Разница времени в секундах");
             Console.WriteLine("7. Длины векторов");
             Console.WriteLine("8. Квадратное уравнение");
+            Console.WriteLine("9. Периметр и площадь треугольника");
+            Console.WriteLine("10. Математические операции с числами");
+            Console.WriteLine("11. Определение вида треугольника");
             numOfProgram = int.Parse(Console.ReadLine());
             Console.WriteLine();
             switch(numOfProgram){
@@ -55,6 +58,15 @@ namespace Study
                     break;
                 case 8:
                     Program8();
+                    break;
+                case 9:
+                    Program9();
+                    break;
+                case 10:
+                    Program10();
+                    break;
+                case 11:
+                    Program11();
                     break;
                 default:
                     Console.WriteLine("Неверно заданное число!");
@@ -235,6 +247,74 @@ namespace Study
             }
             else if(a == 0 && b == 0){
                 Console.WriteLine("Уравнение не имеет смысла");
+            }
+            Console.WriteLine();
+            ChangeProgram();
+        }
+        void Program9(){
+            double a, b, c, p, s, max, min, middle;
+            Console.WriteLine("Введите значения сторон через пробел: ");
+            string text = Console.ReadLine();
+            string[] phrases = text.Split(" ");
+            bool canToBe;
+            a = double.Parse(phrases[0]);
+            b = double.Parse(phrases[1]);
+            c = double.Parse(phrases[2]);
+            middle = 0;
+            max = Math.Max(a, Math.Max(b, c));
+            min = Math.Min(a, Math.Min(b, c));
+            if(a > min && a < max){middle = a;}
+            else if(b > min && b < max){middle = b;}
+            else if(c > min && c < max){middle = c;}
+            if((min + middle) > max){canToBe = true;}
+            else{canToBe = false;}
+            if(canToBe){
+                p = a+b+c;
+                s = Math.Pow(((p/2) * ((p/2)-a) * ((p/2)-b) * ((p/2)-b)), 0.5f);
+                Console.WriteLine("Периметр: " + p + " Площадь: " + s);
+            }
+            else{
+                Console.WriteLine("Такого треугольника не существует!");
+            }
+            Console.WriteLine();
+            ChangeProgram();
+        }
+        void Program10(){
+            double x, y, z;
+            Console.WriteLine("Введите 3 числа через пробел: ");
+            string text = Console.ReadLine();
+            string[] phrases = text.Split(" ");
+            x = double.Parse(phrases[0]);
+            y = double.Parse(phrases[1]);
+            z = double.Parse(phrases[2]);
+            Console.WriteLine("а) " + (Math.Max((x+y+z), x*y*z)+3) + " б) " + ((Math.Min((Math.Pow(x, 2) + Math.Pow(y, 2)), (Math.Pow(y, 2) + Math.Pow(z, 2))))-4));
+            Console.WriteLine();
+            ChangeProgram();
+        }
+        void Program11(){
+            double a, b, c, p, s, max, min, middle;
+            Console.WriteLine("Введите значения сторон через пробел: ");
+            string text = Console.ReadLine();
+            string[] phrases = text.Split(" ");
+            bool canToBe;
+            a = double.Parse(phrases[0]);
+            b = double.Parse(phrases[1]);
+            c = double.Parse(phrases[2]);
+            middle = 0;
+            max = Math.Max(a, Math.Max(b, c));
+            min = Math.Min(a, Math.Min(b, c));
+            if(a > min && a < max){middle = a;}
+            else if(b > min && b < max){middle = b;}
+            else if(c > min && c < max){middle = c;}
+            if((min + middle) > max){canToBe = true;}
+            else{canToBe = false;}
+            if(canToBe){
+                if(Math.Pow(min, 2) + Math.Pow(middle, 2) == Math.Pow(max, 2)){Console.WriteLine("Прямоугольный треугольник!");}
+                else if(Math.Pow(min, 2) + Math.Pow(middle, 2) < Math.Pow(max, 2)){Console.WriteLine("Тупоугольный треугольник!");}
+                else if(Math.Pow(min, 2) + Math.Pow(middle, 2) > Math.Pow(max, 2)){Console.WriteLine("Остроугольный треугольник!");}
+            }
+            else{
+                Console.WriteLine("Такого треугольника не существует!");
             }
             Console.WriteLine();
             ChangeProgram();
