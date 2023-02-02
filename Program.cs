@@ -266,6 +266,7 @@ namespace Study
             if(a > min && a < max){middle = a;}
             else if(b > min && b < max){middle = b;}
             else if(c > min && c < max){middle = c;}
+            else{middle = min;}
             if((min + middle) > max){canToBe = true;}
             else{canToBe = false;}
             if(canToBe){
@@ -306,6 +307,7 @@ namespace Study
             if(a > min && a < max){middle = a;}
             else if(b > min && b < max){middle = b;}
             else if(c > min && c < max){middle = c;}
+            else{middle = min;}
             if((min + middle) > max){canToBe = true;}
             else{canToBe = false;}
             if(canToBe){
