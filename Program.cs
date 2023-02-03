@@ -319,7 +319,7 @@ namespace Study
                     middle = max;
                 }
                 else if(a == min && b == min || b == min && c == min || a == min && c == min){
-
+                    middle = min;
                 }
             }
             if((min + middle) > max){canToBe = true;}
