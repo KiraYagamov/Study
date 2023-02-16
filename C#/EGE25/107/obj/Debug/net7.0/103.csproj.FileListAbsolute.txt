@@ -1,0 +1,15 @@
+C:\Users\79503\Desktop\Study\C#\EGE25\103\bin\Debug\net7.0\103.exe
+C:\Users\79503\Desktop\Study\C#\EGE25\103\bin\Debug\net7.0\103.deps.json
+C:\Users\79503\Desktop\Study\C#\EGE25\103\bin\Debug\net7.0\103.runtimeconfig.json
+C:\Users\79503\Desktop\Study\C#\EGE25\103\bin\Debug\net7.0\103.dll
+C:\Users\79503\Desktop\Study\C#\EGE25\103\bin\Debug\net7.0\103.pdb
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.csproj.AssemblyReference.cache
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.AssemblyInfoInputs.cache
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.AssemblyInfo.cs
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.csproj.CoreCompileInputs.cache
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.dll
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\refint\103.dll
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.pdb
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\103.genruntimeconfig.cache
+C:\Users\79503\Desktop\Study\C#\EGE25\103\obj\Debug\net7.0\ref\103.dll
