@@ -17,6 +17,9 @@ for i in range(len(cep)):
         if(curCount > count):
             count = curCount
         curCount = 0
+        if(num == 0 and cep[i] == "D"):
+            curCount += 1
+            num+=1
     if(i == len(cep)-1):
         if(curCount > count):
             count = curCount
