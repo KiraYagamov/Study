@@ -28,4 +28,4 @@ for i in range(0, len(lines)-1):
 
 print(count, minSumSqr)
 
-#Вывод: 12 19025168
+#Вывод: 10 43133184
