@@ -27,11 +27,13 @@ for i in range(len(three)-1, -1, -1):
         break
 
 for i in range(0, len(lines)-1):
-    if(abs(lines[i]) > 999 and abs(lines[i]) < 10000 and (abs(lines[i+1]) < 999 or abs(lines[i+1]) > 10000)) or (abs(lines[i+1]) > 999 and abs(lines[i+1]) < 10000 and (abs(lines[i]) < 999 or abs(lines[i]) > 10000)):
+    if(len(str(abs(lines[i]))) == 4 and len(str(abs(lines[i+1]))) != 4) or (len(str(abs(lines[i]))) != 4 and len(str(abs(lines[i+1]))) == 4):
         sum = lines[i]**2 + lines[i+1]**2
         if(sum/maxThree == int(sum/maxThree)):
             if(minSumSqr == 0 or minSumSqr > sum):
                 minSumSqr = sum
             count += 1
-            
+
 print(count, minSumSqr)
+
+#Вывод: 12 19025168
