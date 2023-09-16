@@ -15,7 +15,7 @@ count = 0
 for line in file:
     lines.append(int(line))
 for num in lines:
-    if(num > 99 and num < 1000):
+    if(len(str(abs(num))) == 3):
         three.append(num)
 three.sort()
 
