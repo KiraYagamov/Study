@@ -1,10 +1,3 @@
-def to_trinary(num):
-    trinary = ""
-    while(num > 0):
-        trinary += str(num%3)
-        num = num//3
-    return trinary[::-1]
-
 file = open('17-370.txt', "r")
 lines = []
 three = []
