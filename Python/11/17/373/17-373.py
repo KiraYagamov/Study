@@ -23,7 +23,6 @@ for i in range(len(three)-1, -1, -1):
     trinary = to_trinary(three[i])
     if(trinary == trinary[::-1]):
         maxThree = three[i]
-        print(maxThree, trinary)
         break
 
 for i in range(0, len(lines)-1):
