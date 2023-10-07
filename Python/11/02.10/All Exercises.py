@@ -29,13 +29,14 @@ def to_trinary(num):
         thisNum = thisNum // 3
     return trinaryNum
 def ex1():
+    currentNums = []
     for i in range(100):
         binary = to_bin(i)
         binary += chet_bit(binary)
         binary += chet_bit(binary)
         if(int(binary, 2) > 150):
-            print(int(binary, 2))
-            break
+            currentNums.append(int(binary, 2))
+    print(min(currentNums))
 def ex2():
     for x in range(99, 9, -1):
         num = ""
@@ -47,6 +48,7 @@ def ex2():
             print(x)
             break
 def ex3():
+    currentNums = []
     for i in range(100):
         ibinary = to_bin(i)
         binary = ibinary
@@ -54,8 +56,8 @@ def ex3():
         binary += chet_bit(ibinary)
         binary += chet_bit(binary)
         if(int(binary, 2) > 130):
-            print(int(binary, 2))
-            break
+            currentNums.append(int(binary, 2))
+    print(min(currentNums))
 def ex4():
     for i in range(256):
         binary = to_bin_eight(i)
@@ -78,6 +80,7 @@ def ex5():
             print(i)
             break
 def ex6():
+    currentNums = []
     for i in range(1, 100):
         trinary = to_trinary(i)
         if(i % 3 == 0):
@@ -87,10 +90,10 @@ def ex6():
             newTrinary = to_trinary((i % 3) * 5)
             trinary += newTrinary
         if(int(trinary, 3) > 133):
-            print(i)
-            break
+            currentNums.append(int(trinary, 3))
+    print(min(currentNums))
 def select_exercise():
-    exNum = input("Введите номер задачи: ")
+    exNum = input("Введите номер задачи (для выхода: -1): ")
     if(exNum != "-1"):
         print("\nОтвет: ")
         if(exNum == "1"):
